@@ -4,6 +4,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegisterComponent } from './pages/register/register.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -13,7 +14,7 @@ export const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes), ReactiveFormsModule],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}
